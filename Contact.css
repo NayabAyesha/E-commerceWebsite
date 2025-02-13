@@ -1,0 +1,119 @@
+.contact {
+    padding: 9rem 0 5rem 0;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  
+  .contact-info {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .contact-info p i {
+    color: #ff5733;
+    font-size: 1.5rem;
+  }
+  
+  .contact-map {
+    margin: 2rem auto;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-map iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+  }
+  
+  .contact .container {
+    margin-top: 6rem;
+  }
+  
+  .contact .contact-form {
+    max-width: 50rem;
+    margin: auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact .contact-form h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .contact .contact-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contact .contact-form input,
+  .contact .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact .contact-form input:focus,
+  .contact .contact-form textarea:focus {
+    outline: none;
+    border-color: #ff5733;
+    box-shadow: 0px 0px 5px rgba(255, 87, 51, 0.5);
+  }
+  
+  .contact .contact-form input[type="submit"] {
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: #85356d;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .contact .contact-form input[type="submit"]:hover {
+    background-color: white;
+    border: 1px solid #2b2128;
+    color: #85356d;
+    transform: scale(0.9);
+  }
+  
+  @media (max-width: 768px) {
+    .contact {
+      padding: 6rem 0 4rem 0;
+    }
+  
+    .contact-info {
+      font-size: 1rem;
+    }
+  
+    .contact .contact-form {
+      max-width: 90%;
+      padding: 1.5rem;
+    }
+  
+    .contact-map {
+      max-width: 90%;
+    }
+  }
+  

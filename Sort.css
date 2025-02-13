@@ -1,0 +1,35 @@
+.sort-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sort-container label {
+    font-size: 14px;
+    font-weight: 800;
+    color: #333;
+  }
+  
+  .sort-container select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sort-container select:hover {
+    border-color: #888;
+  }
+  
+  .sort-container select:focus {
+    outline: none;
+    border-color: #555;
+  }
+  

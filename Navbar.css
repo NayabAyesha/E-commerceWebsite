@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.Header {
+  width: 100%;
+}
+
+.Header .Mid-Header {
+  max-width: 100%;
+  display: flex;
+  padding: 20px 40px;
+  justify-content: space-between;
+  background: url('../../Assets/lavender.png') no-repeat center center/cover;
+}
+
+.Header .Mid-Header .Logo img {
+  cursor: pointer;
+  object-fit: cover;
+  width: 110px;
+  margin: 0;
+  padding: 0;
+}
+
+.Header .Mid-Header .Search-Box input {
+  padding: 10px;
+  border: 1px solid black;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  width: 250px;
+  color: black;
+}
+
+.Header .Mid-Header .Search-Box input::placeholder {
+  color: black;
+}
+
+.Header .Mid-Header .Search-Box button {
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid black;
+  width: 50px;
+  background: rgb(68, 28, 48);
+  color: black;
+  cursor: pointer;
+  margin-right: 30px;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+.Header .Mid-Header .Search-Box button:hover {
+  background: #9b709b;
+  color: white;
+  border: 1px solid rgb(54, 30, 51);
+  transition: 0.5s;
+}
+
+.Header .Mid-Header .User {
+  background: rgb(68, 28, 48) !important;
+  display: flex;
+  margin-right: 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s;
+  color: #9b709b !important;
+  padding: 10px 20px;
+}
+
+.Header .Mid-Header .User:hover {
+  background: #9b709b !important;
+  color: black !important;
+}
+
+.Header .Mid-Header .User .icon {
+  margin-right: 10px;
+  padding: 10px 1px;
+  color: white;
+}
+
+.Header .Mid-Header .User .button button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 50px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.Header .Last_Header {
+  color: white;
+  max-width: 100%;
+  padding: 10px;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+}
+
+.Header .Last_Header .user-profile {
+  display: flex;
+  margin-top: 30px;
+}
+
+.Header .Last_Header .user-profile .profile-icon {
+  border-radius: 10px;
+  background: rgb(68, 28, 48);
+  padding: 10px;
+}
+
+.Header .Last_Header .user-profile .info {
+  margin-left: 10px;
+}
+
+.Header .Last_Header .user-profile .info h2 {
+  color: white;
+  font-size: 18px;
+}
+
+.Header .Last_Header .user-profile .info p {
+  color: white;
+  font-size: 14px;
+}
+
+.Header .Last_Header .nav {
+  margin-top: 15px;
+}
+
+.Header .Last_Header .nav ul {
+  display: flex;
+}
+
+.Header .Last_Header .nav ul li {
+  list-style: none;
+}
+
+.Header .Last_Header .nav ul li .link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.Header .Last_Header .nav ul li .link:hover,
+.Header .Last_Header .nav ul li .link.active {
+  color: darkviolet;
+  border-bottom: 2px solid darkviolet;
+  transition: 0.5s;
+}
+
+.Header .Last_Header .cart {
+  position: relative;
+}
+
+.Header .Last_Header .cart .cart-trolly {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 35px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.Header .Last_Header .cart .cart-trolly:hover {
+  color: rgb(68, 28, 48);
+}
+
+.Header .Last_Header .cart .cart-total--item {
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgb(68, 28, 48);
+  border-radius: 50%;
+  padding: 5px 10px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header .Last_Header .cart .cart-total--item:hover {
+  background-color: #9b709b;
+}
+
+.Header .Last_Header .offer {
+  margin-right: 10px;
+  margin-left: 90px;
+  padding: 10px 20px;
+  background-color: beige;
+  color: rgb(68, 28, 48);
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.Header .Last_Header .offer p {
+  margin-top: 5px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .Header .Mid-Header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .Header .Mid-Header .Logo img {
+    width: 80px;
+  }
+
+  .Header .Mid-Header .Search-Box input {
+    width: 200px;
+  }
+
+  .Header .Mid-Header .Search-Box button {
+    width: 40px;
+  }
+
+  .Header .Last_Header {
+    flex-direction: column;
+  }
+
+  .Header .Last_Header .user-profile {
+    margin-top: 20px;
+  }
+
+  .Header .Last_Header .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Header .Last_Header .nav ul li {
+    margin: 10px 0;
+  }
+
+  .Header .Last_Header .cart {
+    margin-top: 20px;
+  }
+
+}
+
+.mobile-nav-open {
+  display: block;
+}
+
+.mobile-nav-closed {
+  display: none;
+}
+
+.mobile-navbar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.mobile-navbar-btn .mobile-nav-icon {
+  font-size: 24px;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .Last_Header {
+    display: none;
+  }
+  .Last_Header.mobile-nav-open {
+    display: block;
+  }
+}

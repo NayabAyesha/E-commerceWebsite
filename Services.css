@@ -1,0 +1,20 @@
+.services {
+    text-align: center;
+    padding: 20px;
+    background: url('../../Assets/black.png') no-repeat center center/cover;
+
+  }
+  
+  .service-item {
+    margin: 15px 0;
+  }
+  
+  .service-item h3 {
+    color: rgb(56, 20, 51);
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    color: white;
+  }
+  

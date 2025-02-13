@@ -1,0 +1,45 @@
+.about-container {
+    background: url('../../Assets/lavender.png') no-repeat center center/cover;
+  
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .about-container h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    
+    .about-container p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    
+    .about-container h2 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+    }
+    
+    .about-container ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      gap: 10px;
+      align-items: center;
+    }
+    
+    .about-container li {
+      font-size: 1.1rem;
+      margin: 5px 0;
+      align-items: center;
+      display: flex;
+    }
+  
+    .about-container ul li::before {
+      content: "#";
+      color: purple;
+      margin-right: 8px;
+    }
+    

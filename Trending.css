@@ -1,0 +1,63 @@
+.trending-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .trending-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden; 
+  }
+  
+  .trending-product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 200px; 
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .trending-product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+  }
+  
+  .trending-product-card p {
+    font-size: 20px;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .scroll-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  
+  .scroll-right:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  

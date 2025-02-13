@@ -1,0 +1,36 @@
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 250px;
+}
+
+.filter-container label {
+  font-size: 16px;
+  font-weight: 800;
+  color: black;
+}
+
+.filter-container select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-container select:hover {
+  border-color: #888;
+}
+
+.filter-container select:focus {
+  border-color: #555;
+  outline: none;
+}

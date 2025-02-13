@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.Home
+{
+    width: 100%;
+}
+
+.Home .Top-Banner {
+    max-width: 100%;
+    height: 350px;
+    background: url('../../Assets/tablethings.png') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 50px 60px;
+}
+
+.Home .Top-Banner .Content
+{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    color: black;
+    top: 10%;
+    font-size: larger;
+}
+
+.Home .Top-Banner .Content h2
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.Home .Top-Banner .Content p
+{
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    letter-spacing: 3px;
+}
+
+.Home .Top-Banner .Content .link
+{
+    padding: 10px 20px;
+    background-color: rgb(68, 28, 48);
+    color: black;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration-line: none;
+}
+
+.Home .Top-Banner .Content .link:hover
+{
+    background-color: #462f46;
+    color: white;
+}
+
+.Home .Trending
+{
+    padding: 20px 30px;
+    width: 100%;
+}
+
+.Home .Trending .Container
+{
+    display: flex;
+    max-width: 100%;
+}
+
+.Home .Trending .Container .Left-Box
+{
+    width: 75%;
+    padding: 10px 20px; 
+}
+
+.Home .Trending .Container .Left-Box .Header
+{
+    display: flex;
+    max-width: 100%;
+    padding: 10px 10px;
+    background: #f6f7f8;
+    justify-content: space-between;
+}
+
+.Home .Trending .Container .Left-Box .Header .Heading h2
+{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #232323;
+    margin-top: 5px;
+}
+
+.Home .Trending .Container .Left-Box .Header .cate
+{
+    display: flex;
+    margin-top: 5px;
+}
+
+.Home .Trending .Container .Left-Box .Header .cate h3
+{
+    text-transform: capitalize;
+    margin-right: 10px;
+    color: #232323;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Home .Trending .Container .Left-Box .Header .cate h3:hover
+{
+    color: #cd1e76;
+    transition: 0.5s;
+}
+
+@keyframes changeBackground {
+    10% { background-image: url('../../Assets/first.png'); }
+    10% { background-image: url('../../Assets/shop-banner.png'); }
+    0% { background-image: url('../../Assets/iphone.png'); }
+    20% { background-image: url('../../Assets/headphones.png'); }
+    30% { background-image: url('../../Assets/samsungfold.png'); }
+    40% { background-image: url('../../Assets/smartwatches.png'); }
+    50% { background-image: url('../../Assets/tablet.png'); }
+    60% { background-image: url('../../Assets/tablethings.png'); }
+    70% { background-image: url('../../Assets/orange_smartwatch.png'); }
+    80% { background-image: url('../../Assets/phone.png'); }
+    90% { background-image: url('../../Assets/laptop.png'); }
+}
