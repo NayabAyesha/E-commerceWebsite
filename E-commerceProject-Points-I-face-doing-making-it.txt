@@ -1,0 +1,64 @@
+indexjs is very important here we show the root element other wise blank dikhta hai page
+npm create-react-app myapp                  npm uninstall emailjs-com --save
+
+npm start
+npm install react-scripts
+npm install react-icons md for modern design shipping in yellow colour
+npm instal react routerdom
+npm instal browsr router
+If you don't use the `Auth0Provider`, your React app won't have access to the authentication context provided by Auth0. This means:
+
+1. **No Built-in Auth Context**: You won't be able to use Auth0's hooks (like `useAuth0`) to easily manage authentication states or fetch user information.
+2. **Manual Integration Required**: You would need to manually implement the logic for handling login, logout, and session management with Auth0 APIs.
+3. **Increased Complexity**: Without the provider, integrating Auth0 into your app becomes more complex and less seamless. 
+
+Using `Auth0Provider` simplifies the process by automatically handling these tasks for you.
+
+react icons page for login logout
+isauthenticate for login and logout
+user profile will shown in user.name and user.email by authentication
+
+home page bnaya top banner then router js mei rout path as home and use png for photos
+
+Mahkknay124
+
+contextAPI
+context 
+provider
+consumer LENGTHY DIFFICUT SO WE USE CONSTEXT API HOOK
+children is used to access data in the whole format from store directly
+tecprovider is the store use outside the app so we use it in inde.js
+custom hook ka use is trh hotta hai kei ap ek arrow function bnakr usmei simply call krlo useconstext takei wo globally work krei or brr brr import na krnei prrei coponents mei wo tha wo wala
+
+
+
+import { createContext, useEffect, useContext, useState } from "react";
+
+const TechContext = createContext();
+const API = " https://api.escuelajs.co/api/v1/products";
+
+const TechProvider = ({ children }) => {
+    const [products, setProducts] = useState([]);
+
+    const getProducts = async () => {
+        try {
+            const response = await fetch(API);
+            const data = await response.json();
+            setProducts(data.products);
+        } catch (error) {
+            console.error("Error fetching products:", error);
+        }
+    };
+
+    useEffect(() => {
+        getProducts(API);
+    }, []);
+
+    return (
+        <TechContext.Provider value={{ products }}>
+            {children}
+        </TechContext.Provider>
+    );
+};
+
+export { TechProvider, TechContext };
